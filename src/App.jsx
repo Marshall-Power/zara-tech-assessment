@@ -1,8 +1,10 @@
-import SectionOne from '/src/components/ui/SectionOne'
+import SectionOne from "/src/components/ui/SectionOne";
+import FullScreenImageSection from "/src/components/ui/FullScreenImageSection";
 function App() {
   return (
     <>
       <SectionOne />
+      <FullScreenImageSection />
     </>
   );
 }

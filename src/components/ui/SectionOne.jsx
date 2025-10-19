@@ -14,7 +14,7 @@ export default function SectionOne() {
         </div>
 
         <div className="min-h-[200px] flex items-center">
-          <p className="text-xs leading-[1.45] text-right">
+          <p className=" font-sans text-xs leading-[1.45] text-right">
             Identity by MSM paris Photography by Jaime Hakesworth Short movie
             directed by BYNT Script by David Scearce Produced by Canada
           </p>
