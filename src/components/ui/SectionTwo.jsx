@@ -9,7 +9,7 @@ export default function SectionTwo() {
           <motion.div
             initial={{ filter: "blur(10px)" }}
             whileInView={{ filter: "none" }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.2 }}
             className="aspect-[875/1081] overflow-hidden"
           >
             <img

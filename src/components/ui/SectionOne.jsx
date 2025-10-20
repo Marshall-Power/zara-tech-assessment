@@ -1,4 +1,4 @@
-// src/sections/SectionOne.jsx
+import * as motion from "motion/react-client";
 import img01 from "../../assets/img/img01.jpg";
 
 export default function SectionOne() {
@@ -26,7 +26,12 @@ export default function SectionOne() {
           </p>
         </div>
 
-        <figure className="flex flex-col">
+        <motion.figure
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="flex flex-col"
+        >
           <img
             width={648}
             height={800}
@@ -41,7 +46,7 @@ export default function SectionOne() {
             Picture by Jamie <br /> Hakesworth <br /> ZARA ORIGINS collection{" "}
             <br /> Tappei
           </figcaption>
-        </figure>
+        </motion.figure>
       </div>
     </section>
   );

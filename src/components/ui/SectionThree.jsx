@@ -65,7 +65,11 @@ export default function SectionThree() {
         </motion.div>
 
         <figure>
-          <motion.div initial="offscreen" whileInView="onscreen">
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            className="overflow-hidden"
+          >
             <motion.div
               variants={cardVariantsRight}
               viewport={{ amount: 0.8 }}
