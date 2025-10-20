@@ -1,6 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 
-export default function CarouselSection({slides}) {
+export default function CarouselSection({ slides, paragraph }) {
   const [emblaRef] = useEmblaCarousel();
 
   return (
@@ -28,6 +28,12 @@ export default function CarouselSection({slides}) {
           </figure>
         ))}
       </div>
+      <p
+        className="whitespace-pre-line mt-10 text-xs/[15px] leading-[1.45] text-black/80
+               ml-[36.5vw] mr-[26vw] md:ml-[34vw] md:mr-[24vw] px-4"
+      >
+        {paragraph}
+      </p>
     </section>
   );
 }

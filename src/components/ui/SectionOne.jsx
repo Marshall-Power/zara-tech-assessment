@@ -34,7 +34,7 @@ export default function SectionOne() {
             srcSet={`${img01} 2x`}
             sizes="(min-width: 1552px) 647px, (min-width: 1024px) 40vw, 100vw"
             alt=""
-            className="block w-full h-auto"
+            className="block w-full h-auto transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             loading="eager"
           />
           <figcaption className="mt-3 text-xs text-black/70 text-right">

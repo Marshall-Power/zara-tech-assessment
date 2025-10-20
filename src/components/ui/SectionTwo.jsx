@@ -13,7 +13,7 @@ export default function SectionTwo() {
               width={875}
               height={1081}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
               loading="lazy"
             />
           </div>
