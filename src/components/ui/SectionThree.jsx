@@ -13,7 +13,7 @@ export default function SectionThree() {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 1.2,
+        duration: 1.5,
       },
     },
   };
@@ -27,7 +27,7 @@ export default function SectionThree() {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 1.2,
+        duration: 1.5,
       },
     },
   };

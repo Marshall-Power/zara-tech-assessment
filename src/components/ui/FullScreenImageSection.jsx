@@ -1,8 +1,17 @@
+import * as motion from "motion/react-client";
 import img02 from "../../assets/img/img02.jpg";
 
 export default function FullScreenImageSection() {
   return (
-    <section className="relative flex items-center justify-center h-screen bg-black">
+    <motion.section
+      className="relative flex items-center justify-center h-screen bg-black"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 2,
+        scale: { type: "spring", visualDuration: 1.2, bounce: 0.5 },
+      }}
+    >
       <img
         width={1900}
         height={1080}
@@ -17,6 +26,6 @@ export default function FullScreenImageSection() {
           ZARA ORIGINS <br /> #Permanent Collection
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }
