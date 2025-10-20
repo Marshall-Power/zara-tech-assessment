@@ -32,5 +32,4 @@ A few sections remain unfinished, and planned **scroll-based and hover animation
 With additional time, the next steps would include:
 
 - Fine-tuning element positioning for pixel-level precision.
-- Implementing smooth scroll-triggered animations.
 - Completing the remaining visual sections and final polish as well as code refactoring to improve code cleaniness and standards.

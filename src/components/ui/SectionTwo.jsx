@@ -1,4 +1,4 @@
-// SectionTwo.jsx
+import * as motion from "motion/react-client";
 import img03 from "../../assets/img/img03.jpg";
 
 export default function SectionTwo() {
@@ -6,7 +6,12 @@ export default function SectionTwo() {
     <section className="mx-auto max-w-[1364px] px-2 md:px-[18px] my-12">
       <div className="grid gap-6 md:[grid-template-columns:1.8fr_1fr]">
         <figure>
-          <div className="aspect-[875/1081] overflow-hidden">
+          <motion.div
+            initial={{ filter: "blur(10px)" }}
+            whileInView={{ filter: "none" }}
+            transition={{ duration: 1 }}
+            className="aspect-[875/1081] overflow-hidden"
+          >
             <img
               src={img03}
               srcSet={`${img03} 2x`}
@@ -16,7 +21,7 @@ export default function SectionTwo() {
               className="w-full h-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
               loading="lazy"
             />
-          </div>
+          </motion.div>
         </figure>
 
         <div className="flex justify-end flex-col translate-y-[5%]">
