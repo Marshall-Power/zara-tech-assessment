@@ -1,14 +1,7 @@
-import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import img04 from "../../assets/img/carousel01/img04.jpg";
-import img05 from "../../assets/img/carousel01/img05.jpg";
-import img06 from "../../assets/img/carousel01/img06.jpg";
-import img07 from "../../assets/img/carousel01/img07.jpg";
-import img08 from "../../assets/img/carousel01/img08.jpg";
 
-export default function CarouselSection() {
+export default function CarouselSection({slides}) {
   const [emblaRef] = useEmblaCarousel();
-  const slides = [img04, img05, img06, img07, img08];
 
   return (
     <section
@@ -17,7 +10,10 @@ export default function CarouselSection() {
     >
       <div className="embla__container flex gap-x-[6px]">
         {slides.map((src, i) => (
-          <figure className="shrink-0 w-[320px] sm:w-[480px] md:w-[628px]">
+          <figure
+            key={i}
+            className="shrink-0 w-[320px] sm:w-[480px] md:w-[628px]"
+          >
             <div className="aspect-[647/875] overflow-hidden">
               <img
                 src={src}

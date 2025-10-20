@@ -2,13 +2,34 @@ import SectionOne from "/src/components/ui/SectionOne";
 import FullScreenImageSection from "/src/components/ui/FullScreenImageSection";
 import CarouselSection from "/src/components/ui/Carousel";
 import SectionTwo from "/src/components/ui/SectionTwo";
+import SectionThree from "./components/ui/SectionThree";
+
+
+import img04 from "./assets/img/carousel01/img04.jpg";
+import img05 from "./assets/img/carousel01/img05.jpg";
+import img06 from "./assets/img/carousel01/img06.jpg";
+import img07 from "./assets/img/carousel01/img07.jpg";
+import img08 from "./assets/img/carousel01/img08.jpg";
+
+import img12 from "./assets/img/carousel02/img12.jpg";
+import img13 from "./assets/img/carousel02/img13.jpg";
+import img14 from "./assets/img/carousel02/img14.jpg";
+import img15 from "./assets/img/carousel02/img15.jpg";
+import img16 from "./assets/img/carousel02/img16.jpg";
+
+
+
 function App() {
+  const slidesCarousel1 = [img04, img05, img06, img07, img08];
+  const slidesCarousel2 = [img12, img13, img14, img15, img16];
   return (
     <>
       <SectionOne />
       <FullScreenImageSection />
       <SectionTwo />
-      <CarouselSection />
+      <CarouselSection slides={slidesCarousel1} />
+      <SectionThree />
+      <CarouselSection slides={slidesCarousel2} />
     </>
   );
 }
