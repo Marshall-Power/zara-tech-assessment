@@ -52,7 +52,7 @@ export default function SectionThree() {
                 loading="lazy"
               />
             </motion.div>
-            <figcaption className="mt-16 text-xs leading-[1.45] text-black/80">
+            <figcaption className="mt-16 text-xs leading-[1.25] text-black/80 text-left">
               When Zara Origins launched its first two collection for the winter
               and summer seasons, the constantly evoluing project was defined by
               thes statement. After two editions allowing for experimentation

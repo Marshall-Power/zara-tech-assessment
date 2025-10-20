@@ -10,18 +10,18 @@ export default function SectionOne() {
                       lg:[grid-template-columns:1fr_1fr_1fr_2.15fr]"
       >
         <div className="min-h-[200px] flex items-center">
-          <p className="text-xs leading-[1.45]">ZARA ORIGINS</p>
+          <p className="text-xs leading-[1.25]">ZARA ORIGINS</p>
         </div>
 
         <div className="min-h-[200px] flex items-center">
-          <p className=" font-sans text-xs leading-[1.45] text-right">
+          <p className=" font-sans text-xs leading-[1.25] text-right">
             Identity by MSM paris Photography by Jaime Hakesworth Short movie
             directed by BYNT Script by David Scearce Produced by Canada
           </p>
         </div>
 
         <div className="min-h-[200px] flex items-center">
-          <p className="text-xs leading-[1.45] text-right">
+          <p className="text-xs leading-[1.25] text-right">
             inspired by Vivaldi's <br /> four seasons
           </p>
         </div>

@@ -25,11 +25,13 @@ export default function SectionTwo() {
         </figure>
 
         <div className="flex justify-end flex-col translate-y-[5%]">
-          <p className="text-xs leading-tight uppercase text-left w-full">
+          <p className="text-xs leading-[1.25] uppercase text-left w-full">
             ZARA ORIGINS
           </p>
-          <p className="text-xs text-left w-full">#Permanent Collection</p>
-          <p className="text-xs leading-[1.45] text-left w-full">
+          <p className="text-xs text-left w-full leading-[1.25]">
+            #Permanent Collection
+          </p>
+          <p className="text-xs leading-[1.25] text-left w-full">
             Zara Origins is a project focused upon building a contemporary
             wardrobe. The aim is to conceive, create and offer garments which
             are newly-refined archetypes of their kind, fabricated in the finest

@@ -12,7 +12,7 @@ export default function CarouselSection({ slides, paragraph }) {
         {slides.map((src, i) => (
           <figure
             key={i}
-            className="shrink-0 w-[320px] sm:w-[480px] md:w-[628px]"
+            className="embla_slide shrink-0 w-[320px] sm:w-[480px] md:w-[628px]"
           >
             <div className="aspect-[647/875] overflow-hidden">
               <img
@@ -29,7 +29,7 @@ export default function CarouselSection({ slides, paragraph }) {
         ))}
       </div>
       <p
-        className="whitespace-pre-line mt-10 text-xs/[15px] leading-[1.45] text-black/80
+        className="whitespace-pre-line mt-10 text-xs leading-[1.25] text-black/80
                ml-[36.5vw] mr-[26vw] md:ml-[34vw] md:mr-[24vw] px-4"
       >
         {paragraph}
