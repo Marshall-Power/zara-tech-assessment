@@ -29,7 +29,7 @@ export default function SectionOne() {
         <motion.figure
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 2 }}
           className="flex flex-col"
         >
           <img

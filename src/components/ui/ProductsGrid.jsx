@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const modules = import.meta.glob("../../assets/img/grid/grid*.jpg", {
   eager: true,
 });
@@ -6,18 +8,45 @@ const images = Object.keys(modules)
   .map((k) => modules[k].default);
 
 export default function GridSection({ title = "Productos" }) {
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.06,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, scale: 0.95 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
   return (
-    <section className="mx-auto max-w-[1900px] px-4 md:px-6 py-8 md:py-12">
-      <h2 className="text-[28px] mb-24 w-full text-center">{title}</h2>
+    <motion.section
+      className="mx-auto max-w-[1900px] px-4 md:px-6 py-8 md:py-12"
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.15 }}
+    >
+      <h2 className="text-[28px] mb-24 w-full text-center uppercase">
+        {title}
+      </h2>
       <div
         className="
         grid gap-4 md:gap-6
         grid-cols-2 sm:grid-cols-3
         lg:[grid-template-columns:repeat(5,305px)] lg:justify-center
       "
+        variants={container}
       >
         {images.map((src, i) => (
-          <figure key={i} className="overflow-hidden">
+          <motion.figure key={i} className="overflow-hidden" variants={item}>
             <div className="aspect-[2/3]">
               <img
                 src={src}
@@ -26,9 +55,9 @@ export default function GridSection({ title = "Productos" }) {
                 className="w-full h-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
               />
             </div>
-          </figure>
+          </motion.figure>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

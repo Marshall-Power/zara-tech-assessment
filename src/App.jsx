@@ -3,7 +3,7 @@ import FullScreenImageSection from "/src/components/ui/FullScreenImageSection";
 import CarouselSection from "/src/components/ui/Carousel";
 import SectionTwo from "/src/components/ui/SectionTwo";
 import SectionThree from "/src/components/ui/SectionThree";
-import GridSection from '/src/components/ui/ProductsGrid';
+import GridSection from "/src/components/ui/ProductsGrid";
 
 import img04 from "./assets/img/carousel01/img04.jpg";
 import img05 from "./assets/img/carousel01/img05.jpg";
@@ -44,7 +44,7 @@ After two editions that allowed for experimentation within.
       <CarouselSection slides={slidesCarousel1} />
       <SectionThree />
       <CarouselSection slides={slidesCarousel2} paragraph={sliderParagraph} />
-      <GridSection/>
+      <GridSection title="Shop the collection" />
     </>
   );
 }
