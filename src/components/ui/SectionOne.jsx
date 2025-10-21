@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
 
-export function SectionOne({imgSrc}) {
+export function SectionOne({ imgSrc, columns, description }) {
   return (
     <section className="mx-auto max-w-[1552px] px-6 md:px-8 py-8 md:py-12">
       <div
@@ -8,7 +8,14 @@ export function SectionOne({imgSrc}) {
                       grid-cols-1
                       lg:[grid-template-columns:1fr_1fr_1fr_2.15fr]"
       >
-        <div className="min-h-[200px] flex items-center">
+        {columns.map((text) => {
+          return (
+            <div className="min-h-[200px] flex items-center">
+              <p className="text-xs leading-[1.25]">{text}</p>
+            </div>
+          );
+        })}
+        {/* <div className="min-h-[200px] flex items-center">
           <p className="text-xs leading-[1.25]">ZARA ORIGINS</p>
         </div>
 
@@ -23,7 +30,7 @@ export function SectionOne({imgSrc}) {
           <p className="text-xs leading-[1.25] text-right">
             inspired by Vivaldi's <br /> four seasons
           </p>
-        </div>
+        </div> */}
 
         <motion.figure
           initial={{ opacity: 0 }}
