@@ -23,7 +23,7 @@ export function CarouselSection({ slides, paragraph }) {
               />
             </div>
             <figcaption className="mt-2 text-sm text-black/70 text-right">
-              01/05
+              {i + 1}/{slides.length}
             </figcaption>
           </figure>
         ))}
