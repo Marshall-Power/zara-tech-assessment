@@ -1,7 +1,7 @@
 import * as motion from "motion/react-client";
 import img01 from "../../assets/img/img01.jpg";
 
-export default function SectionOne() {
+export function SectionOne() {
   return (
     <section className="mx-auto max-w-[1552px] px-6 md:px-8 py-8 md:py-12">
       <div

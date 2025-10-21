@@ -1,7 +1,7 @@
 import * as motion from "motion/react-client";
 import img03 from "../../assets/img/img03.jpg";
 
-export default function SectionTwo() {
+export function SectionTwo() {
   return (
     <section className="mx-auto max-w-[1364px] px-2 md:px-[18px] my-12">
       <div className="grid gap-6 md:[grid-template-columns:1.8fr_1fr]">

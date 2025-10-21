@@ -7,7 +7,7 @@ const images = Object.keys(modules)
   .sort()
   .map((k) => modules[k].default);
 
-export default function GridSection({ title = "Productos" }) {
+export function GridSection({ title = "Productos" }) {
   const container = {
     hidden: {},
     show: {

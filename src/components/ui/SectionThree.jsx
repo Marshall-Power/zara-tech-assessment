@@ -3,7 +3,7 @@ import * as motion from "motion/react-client";
 import img09 from "../../assets/img/section3/img09.jpg";
 import img11 from "../../assets/img/section3/img11.jpg";
 
-export default function SectionThree() {
+export function SectionThree() {
   const cardVariantsLeft = {
     offscreen: {
       x: -300,

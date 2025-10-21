@@ -1,9 +1,11 @@
-import SectionOne from "/src/components/ui/SectionOne";
-import FullScreenImageSection from "/src/components/ui/FullScreenImageSection";
-import CarouselSection from "/src/components/ui/Carousel";
-import SectionTwo from "/src/components/ui/SectionTwo";
-import SectionThree from "/src/components/ui/SectionThree";
-import GridSection from "/src/components/ui/ProductsGrid";
+import {
+  SectionOne,
+  FullScreenImageSection,
+  SectionTwo,
+  SectionThree,
+  CarouselSection,
+  GridSection,
+} from "/src/components/ui/";
 
 import img04 from "./assets/img/carousel01/img04.jpg";
 import img05 from "./assets/img/carousel01/img05.jpg";

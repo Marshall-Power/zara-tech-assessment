@@ -1,6 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 
-export default function CarouselSection({ slides, paragraph }) {
+export function CarouselSection({ slides, paragraph }) {
   const [emblaRef] = useEmblaCarousel();
 
   return (
