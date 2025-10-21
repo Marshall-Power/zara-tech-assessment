@@ -8,6 +8,7 @@ export function FullScreenImageSection({ imgSrc, description }) {
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         duration: 4,
+        delay: 0.5,
         scale: { type: "spring", visualDuration: 1.5, bounce: 0.6 },
       }}
     >

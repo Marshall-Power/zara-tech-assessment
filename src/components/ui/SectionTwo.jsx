@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
 
-export function SectionTwo({imgSrc}) {
+export function SectionTwo({ imgSrc, description }) {
   return (
     <section className="mx-auto max-w-[1364px] px-2 md:px-[18px] my-12">
       <div className="grid gap-6 md:[grid-template-columns:1.8fr_1fr]">
@@ -24,19 +24,8 @@ export function SectionTwo({imgSrc}) {
         </figure>
 
         <div className="flex justify-end flex-col translate-y-[5%]">
-          <p className="text-xs leading-[1.25] uppercase text-left w-full">
-            ZARA ORIGINS
-          </p>
-          <p className="text-xs text-left w-full leading-[1.25]">
-            #Permanent Collection
-          </p>
-          <p className="text-xs leading-[1.25] text-left w-full">
-            Zara Origins is a project focused upon building a contemporary
-            wardrobe. The aim is to conceive, create and offer garments which
-            are newly-refined archetypes of their kind, fabricated in the finest
-            materials, and manufactured with high standards of expertise and
-            craft. It harnesses progressive desing to combine modern concepts
-            with outstanding valve.
+          <p className="text-xs text-left w-full whitespace-pre-line">
+            {description}
           </p>
         </div>
       </div>

@@ -16,12 +16,7 @@ export function SectionOne({ imgSrc, columns, description }) {
           );
         })}
 
-        <motion.figure
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="flex flex-col"
-        >
+        <figure className="flex flex-col">
           <img
             width={648}
             height={800}
@@ -32,10 +27,10 @@ export function SectionOne({ imgSrc, columns, description }) {
             className="block w-full h-auto transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             loading="eager"
           />
-          <figcaption className="ml-auto mt-3 text-xs text-black/70 text-right max-w-[156px]">
+          <figcaption className="whitespace-pre-line ml-auto mt-3 text-xs text-black/70 text-right">
             {description}
           </figcaption>
-        </motion.figure>
+        </figure>
       </div>
     </section>
   );

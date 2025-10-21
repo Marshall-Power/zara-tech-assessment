@@ -8,7 +8,8 @@ import {
 } from "/src/components/ui/";
 import {
   SLIDER_PARAGRAPH,
-  FIRST_SECTION,
+  SECTION_ONE_DESCRIPTION,
+  SECTION_TWO_DESCRIPTION,
   PERMANENT_COLLECTION,
 } from "./assets/constants/strings";
 import { carouselImages1 } from "./assets/img/carousel01";
@@ -19,12 +20,12 @@ import { img01, img02, img03, img09, img11 } from "./assets/img";
 function App() {
   return (
     <>
-      <SectionOne imgSrc={img01} {...FIRST_SECTION} />
+      <SectionOne imgSrc={img01} {...SECTION_ONE_DESCRIPTION} />
       <FullScreenImageSection
         imgSrc={img02}
         description={PERMANENT_COLLECTION}
       />
-      <SectionTwo imgSrc={img03} />
+      <SectionTwo imgSrc={img03} description={SECTION_TWO_DESCRIPTION} />
       <CarouselSection slides={carouselImages1} />
       <SectionThree leftImgSrc={img09} righImgSrc={img11} />
       <CarouselSection slides={carouselImages2} paragraph={SLIDER_PARAGRAPH} />

@@ -36,7 +36,6 @@ export function GridSection({ title = "Productos", images }) {
         grid-cols-2 sm:grid-cols-3
         lg:[grid-template-columns:repeat(5,1fr)] lg:justify-center
       "
-        variants={container}
       >
         {images.map((src, i) => (
           <motion.figure key={i} className="overflow-hidden" variants={item}>
