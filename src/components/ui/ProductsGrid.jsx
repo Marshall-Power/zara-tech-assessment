@@ -41,7 +41,7 @@ export function GridSection({ title = "Productos" }) {
         className="
         grid gap-4 md:gap-6
         grid-cols-2 sm:grid-cols-3
-        lg:[grid-template-columns:repeat(5,305px)] lg:justify-center
+        lg:[grid-template-columns:repeat(5,1fr)] lg:justify-center
       "
         variants={container}
       >
