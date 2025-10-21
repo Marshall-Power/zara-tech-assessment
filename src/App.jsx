@@ -11,6 +11,7 @@ import {
   SECTION_ONE_DESCRIPTION,
   SECTION_TWO_DESCRIPTION,
   PERMANENT_COLLECTION,
+  SECTION_THREE_DESCRIPTION,
 } from "./assets/constants/strings";
 import { carouselImages1 } from "./assets/img/carousel01";
 import { carouselImages2 } from "./assets/img/carousel02";
@@ -27,7 +28,7 @@ function App() {
       />
       <SectionTwo imgSrc={img03} description={SECTION_TWO_DESCRIPTION} />
       <CarouselSection slides={carouselImages1} />
-      <SectionThree leftImgSrc={img09} righImgSrc={img11} />
+      <SectionThree leftImgSrc={img09} righImgSrc={img11} description={SECTION_THREE_DESCRIPTION} />
       <CarouselSection slides={carouselImages2} paragraph={SLIDER_PARAGRAPH} />
       <GridSection title="Shop the collection" images={gridImages} />
     </>

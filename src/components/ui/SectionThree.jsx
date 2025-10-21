@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
 
-export function SectionThree({ leftImgSrc, righImgSrc }) {
+export function SectionThree({ leftImgSrc, righImgSrc, description }) {
   const cardVariantsLeft = {
     offscreen: {
       x: -300,
@@ -30,8 +30,8 @@ export function SectionThree({ leftImgSrc, righImgSrc }) {
   };
 
   return (
-    <section className="mx-auto max-w-[1364px] px-4 md:px-6 my-12">
-      <div className="grid grid-cols-1 md:[grid-template-columns:0.4fr_0.6fr] gap-[80px] items-start">
+    <section className="mx-auto px-4 md:px-6 my-12">
+      <div className="grid grid-cols-1 md:[grid-template-columns:0.4fr_0.6fr] gap-[70px] items-start">
         <motion.div initial="offscreen" whileInView="onscreen">
           <figure>
             <motion.div
@@ -49,14 +49,8 @@ export function SectionThree({ leftImgSrc, righImgSrc }) {
                 loading="lazy"
               />
             </motion.div>
-            <figcaption className="mt-16 text-xs leading-[1.25] text-black/80 text-left">
-              When Zara Origins launched its first two collection for the winter
-              and summer seasons, the constantly evoluing project was defined by
-              thes statement. After two editions allowing for experimentation
-              within the collection, the approach for the third editon has
-              evolved naturally solidifying Zara Origins as a yearlong offering
-              of wardrobe essentials that will be supplemented with limited
-              edition seasonal piece.
+            <figcaption className="mt-16 text-xs max-w-[60%] text-black/80 text-left">
+              {description}
             </figcaption>
           </figure>
         </motion.div>

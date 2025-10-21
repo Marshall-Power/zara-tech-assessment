@@ -3,11 +3,7 @@ import * as motion from "motion/react-client";
 export function SectionOne({ imgSrc, columns, description }) {
   return (
     <section className="mx-auto max-w-[1552px] px-6 md:px-8 py-8 md:py-12">
-      <div
-        className="grid gap-6 md:gap-8
-                      grid-cols-1
-                      lg:[grid-template-columns:1fr_1fr_1fr_2.15fr]"
-      >
+      <div className="grid gap-6 md:gap-8 grid-cols-1 lg:[grid-template-columns:1fr_1fr_1fr_2.15fr]">
         {columns.map((text, i) => {
           return (
             <div key={i} className="min-h-[200px] flex items-center">
