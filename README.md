@@ -10,8 +10,8 @@ It focuses on accurate layout reproduction, responsive behavior, and modular cle
 - **Vite** (React)
 - **TailwindCSS v4**
 - **Embla Carousel** for sliders
-- **Framer Motion** (optional fade-in transitions) (wip)
-- **Google Fonts** – ABeeZee (wip)
+- **Framer Motion** 
+- **Google Fonts** – ABeeZee
 
 ---
 
