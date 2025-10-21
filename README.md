@@ -26,10 +26,8 @@ Open http://localhost:5173 in your browser
 
 ## ⚙️ Project Status
 
-Due to time constraints, this submission focuses on delivering the **core layout and responsive structure** rather than full pixel-perfect accuracy.  
-A few sections remain unfinished, and planned **scroll-based and hover animations** were not implemented yet.
+Due to time constraints, this submission focuses on delivering the **core layout and responsive structure with animations** rather than full pixel-perfect accuracy. 
 
 With additional time, the next steps would include:
 
 - Fine-tuning element positioning for pixel-level precision.
-- Completing the remaining visual sections and final polish as well as code refactoring to improve code cleaniness and standards.
