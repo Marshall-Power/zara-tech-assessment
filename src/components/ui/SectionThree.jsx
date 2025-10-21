@@ -1,9 +1,6 @@
 import * as motion from "motion/react-client";
 
-import img09 from "../../assets/img/section3/img09.jpg";
-import img11 from "../../assets/img/section3/img11.jpg";
-
-export function SectionThree() {
+export function SectionThree({ leftImgSrc, righImgSrc }) {
   const cardVariantsLeft = {
     offscreen: {
       x: -300,
@@ -43,8 +40,8 @@ export function SectionThree() {
               className="aspect-[5/4] overflow-hidden"
             >
               <img
-                src={img09}
-                srcSet={`${img09} 2x`}
+                src={leftImgSrc}
+                srcSet={`${leftImgSrc} 2x`}
                 width={657}
                 height={533}
                 alt=""
@@ -76,8 +73,8 @@ export function SectionThree() {
               className="aspect-[5/4] overflow-hidden"
             >
               <img
-                src={img11}
-                srcSet={`${img11} 2x`}
+                src={righImgSrc}
+                srcSet={`${righImgSrc} 2x`}
                 width={1031}
                 height={802}
                 alt=""

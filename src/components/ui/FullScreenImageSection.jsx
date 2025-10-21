@@ -1,7 +1,6 @@
 import * as motion from "motion/react-client";
-import img02 from "../../assets/img/img02.jpg";
 
-export function FullScreenImageSection() {
+export function FullScreenImageSection({imgSrc}) {
   return (
     <motion.section
       className="relative flex items-center justify-center h-screen bg-black"
@@ -15,8 +14,8 @@ export function FullScreenImageSection() {
       <img
         width={1900}
         height={1080}
-        src={img02}
-        srcSet={`${img02} 2x`}
+        src={imgSrc}
+        srcSet={`${imgSrc} 2x`}
         sizes="100vw"
         alt=""
         className="absolute inset-0 w-full h-full max-w-[1900px] mx-auto object-cover object-center"

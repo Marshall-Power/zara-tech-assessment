@@ -1,7 +1,6 @@
 import * as motion from "motion/react-client";
-import img01 from "../../assets/img/img01.jpg";
 
-export function SectionOne() {
+export function SectionOne({imgSrc}) {
   return (
     <section className="mx-auto max-w-[1552px] px-6 md:px-8 py-8 md:py-12">
       <div
@@ -35,8 +34,8 @@ export function SectionOne() {
           <img
             width={648}
             height={800}
-            src={img01}
-            srcSet={`${img01} 2x`}
+            src={imgSrc}
+            srcSet={`${imgSrc} 2x`}
             sizes="(min-width: 1552px) 647px, (min-width: 1024px) 40vw, 100vw"
             alt=""
             className="block w-full h-auto transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
