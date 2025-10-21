@@ -9,7 +9,7 @@ export function FullScreenImageSection() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         duration: 4,
-        scale: { type: "spring", visualDuration: 1.2, bounce: 0.5 },
+        scale: { type: "spring", visualDuration: 1.5, bounce: 0.6 },
       }}
     >
       <img
