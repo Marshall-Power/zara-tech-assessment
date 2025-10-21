@@ -1,13 +1,6 @@
 import { motion } from "framer-motion";
 
-const modules = import.meta.glob("../../assets/img/grid/grid*.jpg", {
-  eager: true,
-});
-const images = Object.keys(modules)
-  .sort()
-  .map((k) => modules[k].default);
-
-export function GridSection({ title = "Productos" }) {
+export function GridSection({ title = "Productos", images }) {
   const container = {
     hidden: {},
     show: {

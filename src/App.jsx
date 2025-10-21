@@ -7,22 +7,21 @@ import {
   GridSection,
 } from "/src/components/ui/";
 import { sliderParagraph } from "./assets/constants/strings";
-import { img04, img05, img06, img07, img08 } from "./assets/img/carousel01";
-import { img12, img13, img14, img15, img16 } from "./assets/img/carousel02";
+import { carouselImages1 } from "./assets/img/carousel01";
+import { carouselImages2 } from "./assets/img/carousel02";
+import { gridImages } from "./assets/img/grid";
 
 function App() {
-  const slidesCarousel1 = [img04, img05, img06, img07, img08];
-  const slidesCarousel2 = [img12, img13, img14, img15, img16];
 
   return (
     <>
       <SectionOne />
       <FullScreenImageSection />
       <SectionTwo />
-      <CarouselSection slides={slidesCarousel1} />
+      <CarouselSection slides={carouselImages1} />
       <SectionThree />
-      <CarouselSection slides={slidesCarousel2} paragraph={sliderParagraph} />
-      <GridSection title="Shop the collection" />
+      <CarouselSection slides={carouselImages2} paragraph={sliderParagraph} />
+      <GridSection title="Shop the collection" images={gridImages} />
     </>
   );
 }
