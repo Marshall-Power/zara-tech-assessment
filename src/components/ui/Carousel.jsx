@@ -28,29 +28,29 @@ export function CarouselSection({ slides, paragraph }) {
       ref={emblaRef}
     >
       <motion.div
-        className="embla__container flex gap-x-[6px] overflow-hidden"
+        className="embla__container flex gap-x-[6px]"
         initial="hidden"
         whileInView="show"
         variants={container}
       >
         {slides.map((src, i) => (
-          <motion.figure
+          <figure
             key={i}
             className="embla_slide shrink-0 w-[320px] sm:w-[480px] md:w-[628px]"
-            variants={item}
           >
             <div className="aspect-[647/875] overflow-hidden">
-              <img
+              <motion.img
                 src={src}
                 alt=""
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:animate-pulse"
                 loading="lazy"
+                variants={item}
               />
             </div>
             <figcaption className="mt-2 text-sm text-black/70 text-right">
               {i + 1}/{slides.length}
             </figcaption>
-          </motion.figure>
+          </figure>
         ))}
       </motion.div>
       <p
