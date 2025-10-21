@@ -6,7 +6,7 @@ export function SectionOne({ imgSrc, columns, description }) {
       <div className="grid gap-6 md:gap-8 grid-cols-1 lg:[grid-template-columns:1fr_1fr_1fr_2.15fr]">
         {columns.map((text, i) => {
           return (
-            <div key={i} className="min-h-[200px] flex items-center">
+            <div key={i} className="flex items-center">
               <p className="text-xs leading-[1.25]">{text}</p>
             </div>
           );

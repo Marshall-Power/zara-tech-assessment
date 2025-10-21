@@ -23,16 +23,14 @@ export function CarouselSection({ slides, paragraph }) {
   };
 
   return (
-    <section
+    <motion.section
       className="mx-auto pl-6 md:pl-8 py-8 md:py-12 embla cursor-grab overflow-hidden"
       ref={emblaRef}
+      variants={container}
+      initial="hidden"
+      whileInView="show"
     >
-      <motion.div
-        className="embla__container flex gap-x-[6px]"
-        initial="hidden"
-        whileInView="show"
-        variants={container}
-      >
+      <div className="embla__container flex gap-x-[6px]" initial="hidden">
         {slides.map((src, i) => (
           <figure
             key={i}
@@ -52,13 +50,10 @@ export function CarouselSection({ slides, paragraph }) {
             </figcaption>
           </figure>
         ))}
-      </motion.div>
-      <p
-        className="whitespace-pre-line mt-10 text-xs leading-[1.25] text-black/80
-               ml-[36.5vw] mr-[26vw] md:ml-[34vw] md:mr-[24vw] px-4"
-      >
+      </div>
+      <p className="whitespace-pre-line mt-10 text-xs text-black/80px-4 md:ml-[40%]">
         {paragraph}
       </p>
-    </section>
+    </motion.section>
   );
 }

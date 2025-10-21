@@ -6,16 +6,14 @@ export function SectionTwo({ imgSrc, description }) {
       <div className="grid gap-6 md:[grid-template-columns:1.8fr_1fr]">
         <figure>
           <motion.div
-            initial={{ filter: "blur(10px)" }}
+            initial={{ filter: "blur(20px)" }}
             whileInView={{ filter: "none" }}
             transition={{ duration: 1.2 }}
-            className="aspect-[875/1081] overflow-hidden"
+            className="overflow-hidden"
           >
             <img
               src={imgSrc}
               srcSet={`${imgSrc} 2x`}
-              width={875}
-              height={1081}
               alt=""
               className="w-full h-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
               loading="lazy"
