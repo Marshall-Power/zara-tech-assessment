@@ -10,6 +10,8 @@ export const FIRST_SECTION = {
     Tappei`,
 };
 
+export const PERMANENT_COLLECTION = `ZARA ORIGINS #Permanent Collection`;
+
 export const SLIDER_PARAGRAPH = `When Zara Origins launched its first two collections for the winter and summer seasons, 
 the constantly evolving project was defined by these statements. 
 After two editions that allowed for experimentation within the collection, 

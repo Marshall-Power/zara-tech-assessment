@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
 
-export function FullScreenImageSection({imgSrc}) {
+export function FullScreenImageSection({ imgSrc, description }) {
   return (
     <motion.section
       className="relative flex items-center justify-center h-screen bg-black"
@@ -21,9 +21,7 @@ export function FullScreenImageSection({imgSrc}) {
         className="absolute inset-0 w-full h-full max-w-[1900px] mx-auto object-cover object-center"
       />
       <div className="absolute z-10 text-white text-left right-[10%] top-[60%] -translate-y-1/2">
-        <p className="text-[13px] font-sans">
-          ZARA ORIGINS <br /> #Permanent Collection
-        </p>
+        <p className="text-xs max-w-[142px]">{description}</p>
       </div>
     </motion.section>
   );

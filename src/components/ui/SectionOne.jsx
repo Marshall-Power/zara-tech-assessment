@@ -8,29 +8,13 @@ export function SectionOne({ imgSrc, columns, description }) {
                       grid-cols-1
                       lg:[grid-template-columns:1fr_1fr_1fr_2.15fr]"
       >
-        {columns.map((text) => {
+        {columns.map((text, i) => {
           return (
-            <div className="min-h-[200px] flex items-center">
+            <div key={i} className="min-h-[200px] flex items-center">
               <p className="text-xs leading-[1.25]">{text}</p>
             </div>
           );
         })}
-        {/* <div className="min-h-[200px] flex items-center">
-          <p className="text-xs leading-[1.25]">ZARA ORIGINS</p>
-        </div>
-
-        <div className="min-h-[200px] flex items-center">
-          <p className=" font-sans text-xs leading-[1.25] text-right">
-            Identity by MSM paris Photography by Jaime Hakesworth Short movie
-            directed by BYNT Script by David Scearce Produced by Canada
-          </p>
-        </div>
-
-        <div className="min-h-[200px] flex items-center">
-          <p className="text-xs leading-[1.25] text-right">
-            inspired by Vivaldi's <br /> four seasons
-          </p>
-        </div> */}
 
         <motion.figure
           initial={{ opacity: 0 }}
@@ -48,9 +32,8 @@ export function SectionOne({ imgSrc, columns, description }) {
             className="block w-full h-auto transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             loading="eager"
           />
-          <figcaption className="mt-3 text-xs text-black/70 text-right">
-            Picture by Jamie <br /> Hakesworth <br /> ZARA ORIGINS collection{" "}
-            <br /> Tappei
+          <figcaption className="ml-auto mt-3 text-xs text-black/70 text-right max-w-[156px]">
+            {description}
           </figcaption>
         </motion.figure>
       </div>
