@@ -4,7 +4,7 @@ export function FullScreenImageSection({ imgSrc, description }) {
   return (
     <motion.section
       className="relative flex items-center justify-center h-screen bg-black"
-      initial={{ opacity: 0, scale: 0 }}
+      initial={{ opacity: 0, scale: 0.6 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         duration: 4,
