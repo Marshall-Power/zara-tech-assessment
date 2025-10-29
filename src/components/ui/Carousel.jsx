@@ -2,7 +2,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 
 export function CarouselSection({ slides, paragraph }) {
-  const [emblaRef] = useEmblaCarousel();
+  const [emblaRef] = useEmblaCarousel({ dragFree: true });
 
   const container = {
     hidden: {},

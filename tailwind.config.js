@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     fontFamily: {
-      sans: ["ABeeZee", "sans-serif"],
+      sans: ["xxemeEtage", "ABeeZee", "sans-serif"],
     },
     container: { center: true, padding: { DEFAULT: "16px", lg: "24px" } },
     screens: {

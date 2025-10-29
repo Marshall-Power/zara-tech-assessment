@@ -3,8 +3,22 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/theme";
 
+@font-face {
+  font-family: "xxemeEtage";
+  src: url("/fonts/XXemeEtage-Regular.woff2") format("eot"),
+    url("/fonts/XXemeEtage-Regular.woff2") format("otf"),
+    url("/fonts/XXemeEtage-Regular.woff2") format("svg"),
+    url("/fonts/XXemeEtage-Regular.woff2") format("ttf"),
+    url("/fonts/XXemeEtage-Regular.woff") format("woff"),
+    url("/fonts/XXemeEtage-Regular.woff2") format("woff2");
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer utilities {
   .font-sans {
-    font-family: "ABeeZee", sans-serif !important;
+    font-family: "xxemeEtage", "ABeeZee", sans-serif !important;
   }
 }
